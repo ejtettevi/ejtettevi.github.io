@@ -8,7 +8,7 @@ Personal academic homepage — live at **https://ejtettevi.github.io**
 
 **Dr. Edward Jenner Tettevi, PhD** — Research Scientist & unit head, molecular cell biologist, bioinformatician; based in Accra, Ghana.
 
-- 🧪 **Research Scientist & Head** of the Biomedical & Public Health Research Unit, CSIR – Water Research Institute; leads the institute's onchocerciasis and lymphatic filariasis team and its AMR-in-ageing-populations programme
+- 🧪 **Research Scientist & Head** of the Biomedical & Public Health Research Unit, CSIR – Water Research Institute; leads the institute's onchocerciasis and lymphatic filariasis team and its AMR-in-ageing-populations programme; member of the NTD **COUNTDOWN** consortium (Ghana team, LSTM)
 - 🎓 **PhD** Molecular Cell Biology of Infectious Pathogens (WACCBIP, University of Ghana) · **MPhil** Parasitology (KNUST) · **BSc** Molecular Biology & Biotechnology (UCC)
 - 🔬 Research spans four connected threads: **Alzheimer's & the gut–brain axis**, **neglected tropical disease elimination** (onchocerciasis, lymphatic filariasis, schistosomiasis, soil-transmitted helminths), **antimicrobial resistance in ageing populations**, and **bioinformatics & drug discovery** (metagenomics, GWAS, comparative genomics, in-silico drug repurposing)
 - 📊 349+ citations, h-index 10 (Google Scholar)
