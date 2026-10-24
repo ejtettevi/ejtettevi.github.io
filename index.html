@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dr. Edward Jenner Tettevi — Molecular Cell Biologist · Accra, Ghana</title>
+<meta name="description" content="Dr. Edward Jenner Tettevi — research scientist, molecular cell biologist and bioinformatician. Alzheimer's & the gut–brain axis, neglected tropical disease elimination and open, reproducible bioinformatics. CSIR–WRI, Accra, Ghana.">
+<!-- Self-contained favicon: green field-notebook "ejt" stamp. No external requests. -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%231f5a45'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-style='italic' font-size='24' fill='%23f4efe4' text-anchor='middle'%3Eejt%3C/text%3E%3C/svg%3E">
+
+<style>
+/* ═══════════════════════════════════════════════════════════════
+   EJT — personal academic homepage
+   Warm editorial look: “scientific journal meets field notebook”.
+   All styles live here; no frameworks, no external fonts/scripts.
+   ═══════════════════════════════════════════════════════════════ */
+
+/* ── EDIT: design tokens (colours & type) ─────────────────────── */
+:root{
+  --paper:      #f4efe4;   /* cream paper background            */
+  --raise:      #faf6ec;   /* slightly raised card surface      */
+  --ink:        #1d2a24;   /* dark green-black text             */
+  --ink-85:     rgba(29,42,36,.85);
+  --ink-70:     rgba(29,42,36,.70);
+  --ink-55:     rgba(29,42,36,.55);
+  --rule:       rgba(29,42,36,.16);
+  --rule-strong:rgba(29,42,36,.34);
+  --green:      #1f5a45;   /* deep forest green accent          */
+  --green-ink:  #17493a;   /* darker green for green text       */
+  --green-tint: rgba(31,90,69,.10);
+  --ochre:      #c8862a;   /* ochre highlight                   */
+  --ochre-ink:  #9a6512;   /* accessible ochre for small text   */
+  --ochre-soft: rgba(200,134,42,.38);
+  --cream:      #f6f1e4;   /* text on solid green               */
+
+  --serif: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  --sans:  "Avenir Next", Avenir, "Segoe UI", "Helvetica Neue", Arial, system-ui, sans-serif;
+  --mono:  "SF Mono", ui-monospace, Menlo, Monaco, "Cascadia Mono", Consolas, monospace;
+}
+
+/* ── Reset & base ─────────────────────────────────────────────── */
+*{ box-sizing:border-box; margin:0; padding:0 }
+html{ scroll-behavior:smooth; scroll-padding-top:88px }
+
+body{
+  font: 400 1rem/1.65 var(--sans);
+  color: var(--ink);
+  background-color: var(--paper);
+  /* faint dot-grid “field notebook” texture */
+  background-image: radial-gradient(rgba(29,42,36,.09) 1px, transparent 1.15px);
+  background-size: 22px 22px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrap{ max-width:1060px; margin-inline:auto; padding-inline:clamp(20px,5vw,42px) }
+
+ul,ol{ list-style:none }
+a{ color:var(--green-ink) }
+a:focus-visible{ outline:2px solid var(--ochre); outline-offset:3px; border-radius:2px }
+::selection{ background:rgba(200,134,42,.35) }
+em{ font-style:italic }
+
+.skip-link{
+  position:absolute; left:-9999px; top:0; z-index:100;
+  background:var(--green); color:var(--cream); font:600 .8rem var(--mono);
+  padding:10px 16px;
+}
+.skip-link:focus{ left:0 }
+
+/* ── Sticky top navigation ────────────────────────────────────── */
+.site-head{
+  position:sticky; top:0; z-index:50;
+  background:rgba(244,239,228,.88);
+  -webkit-backdrop-filter:blur(10px) saturate(1.15);
+  backdrop-filter:blur(10px) saturate(1.15);
+  border-bottom:1.5px solid var(--ink);
+}
+.nav{ display:flex; align-items:center; justify-content:space-between; height:60px }
+.brand{ text-decoration:none }
+.brand-ring{
+  display:grid; place-items:center; width:36px; height:36px;
+  border:1.5px solid var(--green); border-radius:50%;
+  font:700 .6rem var(--mono); letter-spacing:.12em; color:var(--green-ink);
+  background:var(--raise);
+  transition:transform .2s ease, box-shadow .2s ease;
+}
+.brand:hover .brand-ring{ transform:rotate(-8deg); box-shadow:2px 2px 0 var(--ochre) }
+.nav-links{ display:flex; gap:clamp(14px,2.4vw,28px) }
+.nav-links a{
+  font:600 .72rem var(--mono); text-transform:uppercase; letter-spacing:.12em;
+  color:var(--ink-70); text-decoration:none; padding:6px 2px;
+  transition:color .15s ease;
+}
+.nav-links a:hover{ color:var(--green-ink); text-decoration:underline; text-decoration-color:var(--ochre); text-decoration-thickness:2px; text-underline-offset:5px }
+
+/* ── Hero ─────────────────────────────────────────────────────── */
+.hero{ padding:clamp(48px,8vh,84px) 0 0 }
+.hero-grid{
+  display:grid; grid-template-columns:1.15fr .85fr;
+  gap:clamp(30px,5vw,64px); align-items:center;
+}
+.kicker{
+  display:flex; align-items:center; gap:12px;
+  font:600 .74rem var(--mono); text-transform:uppercase; letter-spacing:.22em;
+  color:var(--green-ink);
+}
+.kicker::before{ content:""; width:28px; height:2px; background:var(--ochre); flex:none }
+.hero h1{
+  font:600 clamp(2.6rem,5.8vw,4.3rem)/1.04 var(--serif);
+  letter-spacing:-.01em; color:var(--ink);
+  margin:20px 0 24px;
+}
+.hero h1 em{ color:var(--green-ink) }
+.tagline{
+  font:400 1.14rem/1.7 var(--serif);
+  color:var(--ink-85); max-width:46ch;
+  border-left:3px solid var(--ochre); padding-left:18px;
+}
+.hero-cta{ display:flex; flex-wrap:wrap; gap:14px; margin-top:34px }
+
+/* Buttons — lift with an ochre offset shadow on hover */
+.btn{
+  display:inline-block; cursor:pointer;
+  font:600 .78rem var(--mono); text-transform:uppercase; letter-spacing:.1em;
+  color:var(--ink); text-decoration:none;
+  padding:14px 22px; border:1.5px solid var(--ink);
+  background:transparent;
+  transition:transform .15s ease, box-shadow .15s ease;
+}
+.btn:hover, .btn:focus-visible{
+  transform:translate(-3px,-3px);
+  box-shadow:5px 5px 0 var(--ochre);
+}
+.btn-primary{ background:var(--green); border-color:var(--green); color:var(--cream) }
+.btn-primary:hover{ box-shadow:5px 5px 0 var(--ochre); transform:translate(-3px,-3px) }
+
+/* Portrait block — initials “ejt”, ochre offset shadow.
+   EDIT: to use a real photo, replace the .portrait div with
+   <img class="portrait" src="profile.jpg" alt="Portrait of Dr. Edward Jenner Tettevi"
+        width="420" height="470" style="object-fit:cover">                       */
+.hero-portrait{ position:relative; justify-self:end; width:min(100%,320px) }
+.portrait{
+  display:grid; place-items:center; aspect-ratio:4/4.5;
+  border:1.5px solid var(--ink); box-shadow:10px 10px 0 var(--ochre);
+  background-color:var(--green);
+  background-image:radial-gradient(rgba(246,241,228,.25) 1px, transparent 1.15px);
+  background-size:18px 18px;
+  print-color-adjust:exact; -webkit-print-color-adjust:exact;
+}
+.portrait span{
+  font:italic 600 clamp(3rem,6vw,4.4rem)/1 var(--serif);
+  color:var(--cream); letter-spacing:.02em;
+}
+/* when .portrait is a real photo (img) it fills the frame and crops gently */
+img.portrait{ display:block; width:100%; object-fit:cover }
+.stamp{
+  position:absolute; top:-16px; left:-20px; z-index:2;
+  transform:rotate(-5deg);
+  font:700 .62rem var(--mono); text-transform:uppercase; letter-spacing:.14em;
+  color:var(--ochre-ink); background:var(--paper);
+  border:1.5px solid var(--ochre); border-radius:999px;
+  padding:7px 13px 8px; box-shadow:3px 3px 0 var(--ochre-soft);
+}
+.hero-portrait figcaption{
+  margin-top:16px; padding-top:9px; border-top:1px dashed var(--rule-strong);
+  font:400 .68rem/1.5 var(--mono); letter-spacing:.04em; color:var(--ink-55);
+}
+
+/* ── Stats strip ──────────────────────────────────────────────── */
+.stats{
+  display:grid; grid-template-columns:repeat(4,1fr);
+  border-top:2px solid var(--ink); border-bottom:2px solid var(--ink);
+  margin-top:clamp(48px,7vh,72px);
+}
+.stat{ padding:24px 20px 22px }
+.stat + .stat{ border-left:1px dashed var(--rule-strong) }
+.stat-val{
+  display:block; font:600 2.15rem/1 var(--serif); color:var(--green-ink);
+}
+.stat-val sup{ font-size:.45em; color:var(--ochre-ink); font-weight:700 }
+.stat-lab{
+  display:block; margin-top:10px;
+  font:500 .68rem var(--mono); text-transform:uppercase; letter-spacing:.14em;
+  color:var(--ink-55); line-height:1.5;
+}
+
+/* ── Sections: numbered headings with a thin rule to the right ── */
+.sec{ margin-top:clamp(70px,9vw,110px) }
+.sec-head{ display:flex; align-items:baseline; gap:16px; margin-bottom:clamp(26px,4vw,40px) }
+.sec-num{
+  font:700 .74rem var(--mono); letter-spacing:.28em; color:var(--ochre-ink);
+  transform:translateY(-8px);
+}
+.sec-title{ font:600 clamp(1.55rem,2.8vw,2.05rem)/1.15 var(--serif); color:var(--ink); white-space:nowrap }
+.sec-rule{
+  flex:1; height:3px; align-self:center;
+  background:linear-gradient(to right, var(--ochre) 0 14px, var(--rule-strong) 14px);
+}
+
+/* ── 01 · About ───────────────────────────────────────────────── */
+.about-grid{ display:grid; grid-template-columns:1.55fr 1fr; gap:clamp(30px,4.5vw,54px); align-items:start }
+.bio p{ color:var(--ink-85); font-size:.98rem }
+.bio p + p{ margin-top:16px }
+/* drop cap on the first paragraph */
+.bio p:first-of-type::first-letter{
+  font:600 3.3em/.82 var(--serif); color:var(--green-ink);
+  float:left; padding:.07em .12em 0 0;
+}
+.side-box{
+  background:var(--raise);
+  border:1.5px solid var(--green);
+  box-shadow:8px 8px 0 var(--green-tint);
+  padding:26px 24px 20px;
+}
+.col-head{
+  display:flex; align-items:center; gap:12px; margin-bottom:16px;
+  font:700 .72rem var(--mono); text-transform:uppercase; letter-spacing:.2em;
+  color:var(--green-ink);
+}
+.col-head::after{ content:""; flex:1; height:1px; background:var(--rule-strong) }
+.side-box li{
+  position:relative; padding-left:20px;
+  color:var(--ink-85); font-size:.93rem;
+}
+.side-box li + li{ margin-top:13px }
+.side-box li::before{
+  content:""; position:absolute; left:1px; top:.5em;
+  width:7px; height:7px; background:var(--ochre); transform:rotate(45deg);
+}
+.side-box strong{ font-weight:700; color:var(--ink) }
+.side-hint{
+  margin-top:18px; padding-top:12px; border-top:1px dashed var(--rule);
+  font:400 .7rem/1.6 var(--mono); color:var(--ink-55);
+}
+
+/* ── 02 · Research cards (middle card renders solid green) ────── */
+.research-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:18px }
+.card{
+  display:flex; flex-direction:column;
+  background:var(--raise);
+  border:1.5px solid var(--rule-strong);
+  padding:24px 22px 22px;
+  transition:transform .18s ease, box-shadow .18s ease;
+}
+.card:hover{ transform:translateY(-4px); box-shadow:5px 5px 0 var(--ochre-soft) }
+.card-kick{
+  font:700 .64rem var(--mono); text-transform:uppercase; letter-spacing:.2em;
+  color:var(--ochre-ink); margin-bottom:12px;
+}
+.card h3{ font:600 1.18rem/1.3 var(--serif); color:var(--ink); margin-bottom:12px }
+.card li{
+  position:relative; padding-left:18px;
+  font-size:.9rem; color:var(--ink-85);
+}
+.card li + li{ margin-top:9px }
+.card li::before{
+  content:""; position:absolute; left:0; top:.55em;
+  width:6px; height:6px; border-radius:50%; background:var(--ochre);
+}
+/* solid-green middle card */
+.card-mid{
+  background:var(--green); border-color:var(--green);
+  color:var(--cream); box-shadow:8px 8px 0 rgba(31,90,69,.22);
+  print-color-adjust:exact; -webkit-print-color-adjust:exact;
+}
+.card-mid .card-kick{ color:#eecd8e }
+.card-mid h3{ color:var(--cream) }
+.card-mid li{ color:rgba(246,241,228,.88) }
+.card-mid li::before{ background:#eecd8e }
+.card-mid:hover{ box-shadow:8px 12px 0 var(--ochre) }
+.card-xref{
+  margin-top:auto; padding-top:16px;
+  font:600 .68rem var(--mono); text-transform:uppercase; letter-spacing:.14em;
+  text-decoration:none; color:var(--green-ink);
+}
+.card-xref:hover{ text-decoration:underline; text-decoration-color:var(--ochre); text-underline-offset:4px }
+
+/* ── 03 · Code & pipelines ────────────────────────────────────── */
+.repo-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:18px }
+.repo{
+  display:flex; flex-direction:column; gap:10px;
+  background:var(--raise); border:1.5px solid var(--rule-strong);
+  padding:20px 20px 18px; text-decoration:none; color:inherit;
+  transition:transform .18s ease, box-shadow .18s ease;
+}
+.repo:hover{ transform:translateY(-4px); box-shadow:5px 5px 0 var(--ochre-soft) }
+.repo:hover.repo-all{ box-shadow:5px 5px 0 var(--ochre-soft) }
+.repo-top{ display:flex; align-items:center; justify-content:space-between; gap:10px }
+.repo-path{ display:block; font:400 .64rem var(--mono); color:var(--ink-55); overflow:hidden; text-overflow:ellipsis; white-space:nowrap }
+.repo h3{ font:600 1.06rem var(--serif); color:var(--ink) }
+.repo:hover h3{ color:var(--green-ink) }
+.repo p{ font-size:.88rem; color:var(--ink-70); flex-grow:1 }
+.repo em{ font-style:italic } /* species names */
+.pill{
+  align-self:flex-start;
+  font:700 .6rem var(--mono); text-transform:uppercase; letter-spacing:.14em;
+  padding:4px 9px 5px; border-radius:999px; border:1px solid var(--rule-strong);
+  color:var(--ink-70);
+}
+.pill-py{ color:var(--ochre-ink); border-color:rgba(200,134,42,.55); background:rgba(200,134,42,.08) }
+.pill-r { color:var(--green-ink); border-color:rgba(31,90,69,.45); background:var(--green-tint) }
+.repo-all{
+  background:transparent; border-style:dashed;
+  align-items:center; justify-content:center; text-align:center; gap:14px;
+}
+.repo-all h3{ font-size:1.25rem }
+.repo-all b{
+  font:700 .68rem var(--mono); text-transform:uppercase; letter-spacing:.18em;
+  color:var(--ochre-ink);
+}
+
+/* ── 04 · Publications ────────────────────────────────────────── */
+.pub{
+  display:grid; grid-template-columns:64px 1fr; gap:20px;
+  padding:20px 0; border-bottom:1px dashed var(--rule-strong);
+}
+.pub-year{ font:700 .82rem var(--mono); color:var(--ochre-ink); padding-top:3px }
+.pub-title{
+  font:400 1.1rem/1.45 var(--serif); color:var(--green-ink);
+  text-decoration:underline; text-decoration-color:rgba(29,42,36,.28); text-underline-offset:4px;
+}
+.pub-title:hover{ text-decoration-color:var(--ochre); text-decoration-thickness:2px }
+.pub-auth{ display:block; margin-top:5px; font-size:.88rem; color:var(--ink-70) }
+.pub-auth strong{ color:var(--ink); font-weight:700 }
+.pub-jr{ font-style:italic; font-family:var(--serif); color:var(--ink) }
+.pub-note{ font:500 .74rem var(--mono); color:var(--ink-55) }
+.pub-more{
+  margin-top:26px; padding:14px 0 2px 18px; border-left:2px solid var(--ochre);
+  font:400 .95rem/1.7 var(--serif); color:var(--ink-85);
+}
+.pub-more .note-flag{
+  display:block; margin-bottom:6px;
+  font:700 .62rem var(--mono); text-transform:uppercase; letter-spacing:.22em; color:var(--ochre-ink);
+}
+
+/* ── 05 · Experience & recognition ────────────────────────────── */
+.xp-grid{ display:grid; grid-template-columns:1.08fr 1fr; gap:clamp(30px,4.5vw,56px); align-items:start }
+.timeline li{
+  position:relative; padding:0 0 30px 24px;
+  border-left:1.5px solid var(--rule-strong);
+}
+.timeline li:last-child{ padding-bottom:6px }
+/* green dot punched onto the line */
+.timeline li::before{
+  content:""; position:absolute; left:-7px; top:5px;
+  width:11px; height:11px; border-radius:50%;
+  background:var(--green); border:2.5px solid var(--paper);
+  box-shadow:0 0 0 1.5px var(--green);
+}
+.tl-year{ font:700 .7rem var(--mono); letter-spacing:.18em; color:var(--ochre-ink) }
+.timeline h3{ font:600 1.12rem var(--serif); color:var(--ink); margin-top:5px }
+.tl-org{ font:500 .7rem var(--mono); letter-spacing:.06em; color:var(--ink-55); margin-top:2px }
+.tl-desc{ margin-top:8px; font-size:.9rem; color:var(--ink-85) }
+.awards li{
+  display:grid; grid-template-columns:88px 1fr; gap:16px;
+  padding:13px 0; border-bottom:1px dashed var(--rule);
+}
+.awards li:first-of-type{ padding-top:2px }
+.aw-year{ font:700 .68rem var(--mono); color:var(--ochre-ink); padding-top:3px }
+.awards p{ font-size:.9rem; color:var(--ink-85) }
+.awards strong{ color:var(--ink) }
+.tags{ display:flex; flex-wrap:wrap; gap:8px }
+.tags li{
+  font:600 .66rem var(--mono); text-transform:uppercase; letter-spacing:.1em;
+  color:var(--ink-70); background:var(--raise);
+  border:1px solid var(--rule-strong); border-radius:2px;
+  padding:6px 10px 7px;
+}
+.xp-gap{ height:34px }
+
+/* ── 06 · Contact — bold green CTA block ──────────────────────── */
+.cta{
+  background:var(--green); color:var(--cream);
+  border:1.5px solid var(--green);
+  box-shadow:12px 12px 0 var(--ochre);
+  padding:clamp(36px,6vw,62px) clamp(26px,5vw,58px);
+  background-image:radial-gradient(rgba(246,241,228,.14) 1px, transparent 1.15px);
+  background-size:20px 20px;
+  print-color-adjust:exact; -webkit-print-color-adjust:exact;
+}
+.cta-kick{ font:600 .68rem var(--mono); text-transform:uppercase; letter-spacing:.26em; color:#eecd8e }
+.cta-title{
+  font:italic 600 clamp(1.9rem,4.4vw,2.9rem)/1.1 var(--serif);
+  margin:14px 0 16px;
+}
+.cta-line{ max-width:56ch; font-size:1rem; color:rgba(246,241,228,.92) }
+.cta-links{ display:flex; flex-wrap:wrap; gap:14px 30px; margin-top:30px }
+.cta-links a{
+  font:600 .82rem var(--mono); color:var(--cream);
+  text-decoration:underline; text-decoration-color:rgba(246,241,228,.45); text-underline-offset:5px;
+}
+.cta-links a:hover{ text-decoration-color:#eecd8e }
+
+/* ── Footer ───────────────────────────────────────────────────── */
+.site-foot{ margin-top:clamp(70px,9vw,110px); border-top:2px solid var(--ink) }
+.foot-row{
+  display:flex; flex-wrap:wrap; justify-content:space-between; gap:10px;
+  padding:26px 0 42px;
+  font:500 .68rem var(--mono); letter-spacing:.08em; color:var(--ink-55);
+}
+.foot-row .foot-strong{ color:var(--ink) }
+
+/* ── Staggered hero fade-up (CSS-only; no scripts) ────────────── */
+@keyframes rise{ from{ opacity:0; transform:translateY(16px) } to{ opacity:1; transform:none } }
+.fade-up{ animation:rise .75s cubic-bezier(.16,.7,.2,1) both; animation-delay:var(--d,0s) }
+
+/* ── Responsive ───────────────────────────────────────────────── */
+@media (max-width:920px){
+  .hero-grid{ grid-template-columns:1fr }
+  .hero-portrait{ justify-self:start; width:min(72%,300px) }
+  .research-grid, .repo-grid{ grid-template-columns:repeat(2,1fr) }
+  .card-mid{ margin-top:0 }
+  .about-grid, .xp-grid{ grid-template-columns:1fr }
+  .stats{ grid-template-columns:repeat(2,1fr) }
+  .stat:nth-child(2){ border-left:none }
+  .stat:nth-child(n+3){ border-top:1px dashed var(--rule-strong) }
+}
+@media (max-width:600px){
+  .nav-links{ display:none }           /* collapse nav links on mobile */
+  html{ scroll-padding-top:20px }
+  .research-grid, .repo-grid{ grid-template-columns:1fr }
+  .pub{ grid-template-columns:1fr; gap:6px }
+  .awards li{ grid-template-columns:1fr; gap:4px }
+  .btn{ flex:1; text-align:center }
+  .cta{ box-shadow:8px 8px 0 var(--ochre) }
+  .portrait{ box-shadow:7px 7px 0 var(--ochre) }
+}
+
+/* ── Motion preferences ───────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce){
+  html{ scroll-behavior:auto }
+  *, *::before, *::after{ animation:none !important; transition:none !important }
+  .fade-up{ opacity:1 }
+}
+
+/* ── A4 print stylesheet ──────────────────────────────────────── */
+@page{ size:A4; margin:12mm }
+@media print{
+  .site-head, .skip-link, .btn, .card-xref{ display:none !important }
+  html{ scroll-padding-top:0 }
+  body{ background:#fff; font-size:10.5pt; color:#000 }
+  .wrap{ max-width:none; padding:0 }
+  .hero{ padding-top:8pt }
+  .sec{ margin-top:20pt }
+  .sec-head{ margin-bottom:12pt }
+  *, *::before, *::after{ box-shadow:none !important; text-shadow:none !important }
+  a{ color:inherit; text-decoration:none }
+  .cta, .portrait, .card-mid .card-kick{ print-color-adjust:exact; -webkit-print-color-adjust:exact }
+  .portrait{ border:1pt solid #000; box-shadow:none }
+  .stamp{ border:1pt solid #000; color:#000; background:#fff }
+  .cta{ border:none; box-shadow:none }
+  .stats{ border-block:1pt solid #000 }
+  .sec-rule{ background:none; border-top:.6pt solid #000 }
+  .card, .repo, .pub, .timeline li, .stats, .cta, .side-box{ break-inside:avoid }
+  .timeline li{ padding-bottom:10pt }
+  .pub{ padding:8pt 0 }
+  /* print the real addresses next to contact links */
+  .cta-links a::after{ content:" · " attr(data-print); font-size:8pt; color:#000 }
+}
+</style>
+</head>
+
+<body>
+<a class="skip-link" href="#about">Skip to content</a>
+
+<!-- ══════════════ STICKY NAVIGATION ══════════════ -->
+<header class="site-head">
+  <nav class="wrap nav" aria-label="Primary">
+    <a class="brand" href="#top" aria-label="EJT — back to top"><span class="brand-ring">EJT</span></a>
+    <!-- EDIT: nav labels (links hide themselves on small screens) -->
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#code">Code</a></li>
+      <li><a href="#publications">Papers</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- ══════════════ HERO ══════════════ -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <!-- EDIT: the little label above your name -->
+        <p class="kicker fade-up" style="--d:.02s">PhD · Research Scientist · Accra, Ghana</p>
+        <!-- EDIT: name. The <em> word is set in italic green -->
+        <h1 class="fade-up" style="--d:.1s">Edward <em>Jenner</em> Tettevi</h1>
+        <!-- EDIT: tagline -->
+        <p class="tagline fade-up" style="--d:.18s">I study how microbes, parasites and molecules shape disease, from the gut–brain axis in Alzheimer’s to river blindness in rural Ghana, at the bench and in code.</p>
+        <div class="hero-cta fade-up" style="--d:.26s">
+          <a class="btn btn-primary" href="#research">Explore my research</a>
+          <a class="btn" href="#contact">Get in touch</a>
+        </div>
+      </div>
+
+      <figure class="hero-portrait fade-up" style="--d:.32s">
+        <div class="stamp" aria-hidden="true">CSIR–WRI · ACCRA</div>
+        <!-- EDIT: PORTRAIT — currently uses your real photo, "profile.jpg" (in this folder).
+             To update it, just overwrite profile.jpg with a new image of the same name.
+             To go back to the "ejt" initials block instead of a photo, use:
+             <div class="portrait"><span>ejt</span></div>                                        -->
+        <img class="portrait" src="profile.jpg" alt="Portrait of Dr. Edward Jenner Tettevi"
+             width="420" height="472" loading="eager">
+        <figcaption>Fig. 1 — Molecular cell biologist, at the bench and in code.</figcaption>
+      </figure>
+    </div>
+
+    <!-- ══ STATS STRIP · EDIT: numbers & labels ══ -->
+    <div class="wrap">
+      <ul class="stats">
+        <li class="stat fade-up" style="--d:.38s"><span class="stat-val">15<sup>+</sup></span><span class="stat-lab">Years in biomedical research</span></li>
+        <li class="stat fade-up" style="--d:.44s"><span class="stat-val">14</span><span class="stat-lab">Peer-reviewed publications</span></li>
+        <li class="stat fade-up" style="--d:.5s"><span class="stat-val">2<sup>×</sup></span><span class="stat-lab">First place, omics codeathons</span></li>
+        <li class="stat fade-up" style="--d:.56s"><span class="stat-val">3</span><span class="stat-lab">Grants as PI / Co-PI</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ══════════════ 01 · ABOUT ══════════════ -->
+  <section class="sec" id="about">
+    <div class="wrap">
+      <header class="sec-head">
+        <span class="sec-num" aria-hidden="true">01</span>
+        <h2 class="sec-title">About</h2>
+        <span class="sec-rule" aria-hidden="true"></span>
+      </header>
+
+      <div class="about-grid">
+        <div class="bio">
+          <!-- EDIT: paragraph 1 — role -->
+          <p>I am a research scientist at the <strong>Council for Scientific &amp; Industrial Research – Water Research Institute (CSIR–WRI)</strong> in Accra, where I currently serve as Acting Head of the Biomedical and Public Health Research Unit and lead the institute’s onchocerciasis and lymphatic filariasis research team — working with communities, health systems and field teams across Ghana.</p>
+          <!-- EDIT: paragraph 2 — education -->
+          <p>My training spans three universities: a PhD in Molecular Cell Biology of Infectious Pathogens from the <strong>West African Centre for Cell Biology of Infectious Pathogens (WACCBIP), University of Ghana</strong>; an MPhil in Parasitology from <strong>KNUST</strong>; and a BSc in Molecular Biology &amp; Biotechnology from the <strong>University of Cape Coast</strong>.</p>
+          <!-- EDIT: paragraph 3 — the bridge -->
+          <p>What defines my work is the bridge it builds — between the wet lab and the field, between field epidemiology and computation. Most weeks I move from bench assays to village clinics to analysis pipelines, and I believe science is only finished when it is published <em>and</em> reproducible in code.</p>
+        </div>
+
+        <aside class="side-box" aria-label="Current roles">
+          <h3 class="col-head">Currently</h3>
+          <!-- EDIT: current roles & affiliations -->
+          <ul>
+            <li><strong>Ag. Head,</strong> Biomedical &amp; Public Health Research Unit, CSIR–WRI</li>
+            <li><strong>PI,</strong> IBRO Rising Star Award, 2026–2028</li>
+            <li><strong>Co-PI,</strong> GIZ PharmaVax Research Grant, 2026–2028</li>
+            <li><strong>Technical Committee Member,</strong> Ghana Tiered Laboratory Standards, Ghana Health Service</li>
+          </ul>
+          <p class="side-hint">Field sites: western &amp; northern Ghana ➜ bench: Accra ➜ models: anywhere a terminal runs.</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ 02 · RESEARCH ══════════════ -->
+  <section class="sec" id="research">
+    <div class="wrap">
+      <header class="sec-head">
+        <span class="sec-num" aria-hidden="true">02</span>
+        <h2 class="sec-title">Research</h2>
+        <span class="sec-rule" aria-hidden="true"></span>
+      </header>
+
+      <!-- EDIT: three research themes. The card with class "card card-mid" renders solid green. -->
+      <div class="research-grid">
+        <article class="card">
+          <p class="card-kick">01 · Bench &amp; brain</p>
+          <h3>Alzheimer’s disease &amp; the gut–brain axis</h3>
+          <ul>
+            <li>Microbiome dysbiosis across gut and oral niches</li>
+            <li>Gene expression &amp; protein aggregation in 3xTg-AD models</li>
+            <li>African medicinal plants — <em>Rauwolfia vomitoria</em> and functional foods</li>
+          </ul>
+        </article>
+
+        <article class="card card-mid">
+          <p class="card-kick">02 · Field &amp; eliminations</p>
+          <h3>Neglected tropical diseases</h3>
+          <ul>
+            <li>Onchocerciasis &amp; lymphatic filariasis elimination</li>
+            <li>Ivermectin response &amp; molecular xeno-monitoring</li>
+            <li>Schistosomiasis &amp; soil-transmitted helminths</li>
+            <li>Field-ready diagnostics for rural health systems</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <p class="card-kick">03 · Computation</p>
+          <h3>Bioinformatics &amp; drug discovery</h3>
+          <ul>
+            <li>Metagenomics, GWAS &amp; comparative genomics</li>
+            <li>Cross-cohort meta-analysis &amp; systematic review</li>
+            <li>In-silico drug repurposing &amp; molecular docking</li>
+            <li>Reproducible, open-source pipelines</li>
+          </ul>
+          <a class="card-xref" href="#code">See the pipelines ↓ 03</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ 03 · CODE & PIPELINES ══════════════ -->
+  <section class="sec" id="code">
+    <div class="wrap">
+      <header class="sec-head">
+        <span class="sec-num" aria-hidden="true">03</span>
+        <h2 class="sec-title">Code &amp; Pipelines</h2>
+        <span class="sec-rule" aria-hidden="true"></span>
+      </header>
+
+      <!-- EDIT: repo cards — swap links, language pills or descriptions as needed -->
+      <div class="repo-grid">
+        <a class="repo" href="https://github.com/ejtettevi/ibd-taxonomic-dysbiosis" target="_blank" rel="noopener">
+          <div class="repo-top"><h3>ibd-taxonomic-dysbiosis</h3><span class="pill pill-py">Python</span></div>
+          <p>Cross-cohort re-analysis of IBD taxonomic dysbiosis — ANCOM-BC2, random-effects meta-analysis and leave-one-cohort-out random forest.</p>
+          <span class="repo-path">github.com/ejtettevi/ibd-taxonomic-dysbiosis</span>
+        </a>
+
+        <a class="repo" href="https://github.com/ejtettevi/ad_oral_microbiome" target="_blank" rel="noopener">
+          <div class="repo-top"><h3>ad_oral_microbiome</h3><span class="pill pill-r">R</span></div>
+          <p>Salivary microbiome changes in Alzheimer’s disease, analysed with diversity metrics and machine learning.</p>
+          <span class="repo-path">github.com/ejtettevi/ad_oral_microbiome</span>
+        </a>
+
+        <a class="repo" href="https://github.com/ejtettevi/ad_gwas_analysis" target="_blank" rel="noopener">
+          <div class="repo-top"><h3>ad_gwas_analysis</h3><span class="pill pill-py">Python</span></div>
+          <p>Analysis of the ADVP Alzheimer’s genome-wide association study dataset — variants, annotation and visualisation.</p>
+          <span class="repo-path">github.com/ejtettevi/ad_gwas_analysis</span>
+        </a>
+
+        <a class="repo" href="https://github.com/ejtettevi/African_Mundinia-" target="_blank" rel="noopener">
+          <div class="repo-top"><h3>African_Mundinia-</h3><span class="pill pill-py">Python</span></div>
+          <p>Comparative genomics of two African <em>Leishmania</em> species — synteny, divergence and parasite biology in code.</p>
+          <span class="repo-path">github.com/ejtettevi/African_Mundinia-</span>
+        </a>
+
+        <a class="repo" href="https://github.com/ejtettevi/disease-dashboard" target="_blank" rel="noopener">
+          <div class="repo-top"><h3>disease-dashboard</h3><span class="pill">Data viz</span></div>
+          <p>Interactive dashboard for exploring disease data — surveillance made browsable.</p>
+          <span class="repo-path">github.com/ejtettevi/disease-dashboard</span>
+        </a>
+
+        <a class="repo repo-all" href="https://github.com/ejtettevi?tab=repositories" target="_blank" rel="noopener">
+          <h3>All repositories</h3>
+          <b>View everything on GitHub →</b>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ 04 · SELECTED PUBLICATIONS ══════════════ -->
+  <section class="sec" id="publications">
+    <div class="wrap">
+      <header class="sec-head">
+        <span class="sec-num" aria-hidden="true">04</span>
+        <h2 class="sec-title">Selected Publications</h2>
+        <span class="sec-rule" aria-hidden="true"></span>
+      </header>
+
+      <!-- EDIT: publications — the title link is the DOI; your name is wrapped in <strong>; journals in <em>. -->
+      <ol class="pubs">
+        <li class="pub">
+          <span class="pub-year">2025</span>
+          <div>
+            <a class="pub-title" href="https://doi.org/10.1002/brb3.70946">Antibiotic-induced gut dysbiosis modulates Alzheimer’s disease-associated gene expression and protein aggregation in 3xTg-AD mice via the gut–brain axis</a>
+            <span class="pub-auth"><strong>Tettevi EJ</strong> et al.</span>
+            <span class="pub-auth"><em class="pub-jr">Brain and Behavior</em></span>
+          </div>
+        </li>
+
+        <li class="pub">
+          <span class="pub-year">2025</span>
+          <div>
+            <a class="pub-title" href="https://doi.org/10.1002/alz.70220">Genetic and environmental risk factors for dementia in African adults: a systematic review</a>
+            <span class="pub-auth">Donkor DM, … <strong>Tettevi EJ</strong> et al.</span>
+            <span class="pub-auth"><em class="pub-jr">Alzheimer’s &amp; Dementia</em></span>
+          </div>
+        </li>
+
+        <li class="pub">
+          <span class="pub-year">2024</span>
+          <div>
+            <a class="pub-title" href="https://doi.org/10.1155/2024/9985719">In silico identification of a potential TNF-alpha binder: a drug repurposing approach to the management of Alzheimer’s disease</a>
+            <span class="pub-auth"><strong>Tettevi EJ</strong> et al.</span>
+            <span class="pub-auth"><em class="pub-jr">BioMed Research International</em></span>
+          </div>
+        </li>
+
+        <li class="pub">
+          <span class="pub-year">2024</span>
+          <div>
+            <a class="pub-title" href="https://doi.org/10.1186/s12879-024-10071-2">Persistent transmission of onchocerciasis in Kwanware-Ottou focus in Wenchi health district, Ghana</a>
+            <span class="pub-auth">Nditanchou R, … <strong>Tettevi EJ</strong> et al.</span>
+            <span class="pub-auth"><em class="pub-jr">BMC Infectious Diseases</em></span>
+          </div>
+        </li>
+
+        <li class="pub">
+          <span class="pub-year">2022</span>
+          <div>
+            <a class="pub-title" href="https://doi.org/10.1177/2515690X221114657">A review of African medicinal plants and functional foods for the management of Alzheimer’s disease-related phenotypes, HSV-1 infection and gut microbiota</a>
+            <span class="pub-auth"><strong>Tettevi EJ</strong> et al.</span>
+            <span class="pub-auth"><em class="pub-jr">Journal of Evidence-Based Integrative Medicine</em></span>
+          </div>
+        </li>
+
+        <li class="pub">
+          <span class="pub-year">2019</span>
+          <div>
+            <a class="pub-title" href="https://doi.org/10.1371/journal.pntd.0006994">Elimination within reach: A cross-sectional study highlighting the factors that contribute to persistent lymphatic filariasis in eight communities in rural Ghana</a>
+            <span class="pub-auth">Minetti C<sup>*</sup>, <strong>Tettevi EJ</strong><sup>*</sup> et al. <span class="pub-note">* joint first authors</span></span>
+            <span class="pub-auth"><em class="pub-jr">PLoS Neglected Tropical Diseases</em></span>
+          </div>
+        </li>
+      </ol>
+
+      <!-- EDIT: the “more work” line -->
+      <p class="pub-more">
+        <span class="note-flag">In the pipeline</span>
+        Further work appears in <em>Clinical Infectious Diseases</em>, <em>PLoS NTDs</em>, <em>PLoS ONE</em> and <em>Expert Review of Molecular Diagnostics</em>, with two manuscripts under review in 2025–26.
+      </p>
+    </div>
+  </section>
+
+  <!-- ══════════════ 05 · EXPERIENCE & RECOGNITION ══════════════ -->
+  <section class="sec" id="experience">
+    <div class="wrap">
+      <header class="sec-head">
+        <span class="sec-num" aria-hidden="true">05</span>
+        <h2 class="sec-title">Experience &amp; Recognition</h2>
+        <span class="sec-rule" aria-hidden="true"></span>
+      </header>
+
+      <div class="xp-grid">
+        <!-- EDIT: timeline (newest first). Each li gets a green dot on the line. -->
+        <ul class="timeline">
+          <li>
+            <span class="tl-year">2016 — PRESENT</span>
+            <h3>Research Scientist</h3>
+            <p class="tl-org">CSIR–WATER RESEARCH INSTITUTE · BIOMEDICAL &amp; PUBLIC HEALTH RESEARCH UNIT</p>
+            <p class="tl-desc">Alzheimer’s &amp; gut–brain-axis research, project management, grant writing, student mentorship; currently Acting Head of Unit.</p>
+          </li>
+          <li>
+            <span class="tl-year">2010 — 2016</span>
+            <h3>Principal Technologist</h3>
+            <p class="tl-org">CSIR · PARASITOLOGY LABORATORY</p>
+            <p class="tl-desc">Parasitology &amp; molecular-biology bench set-up, malaria epidemiology, laboratory management.</p>
+          </li>
+          <li>
+            <span class="tl-year">2008 — 2010</span>
+            <h3>Laboratory Technologist</h3>
+            <p class="tl-org">TEMA GENERAL HOSPITAL</p>
+            <p class="tl-desc">Haematology, blood banking, clinical biochemistry and microbiology.</p>
+          </li>
+          <li>
+            <span class="tl-year">2002 — 2003</span>
+            <h3>Computer Hardware Engineer</h3>
+            <p class="tl-org">GHANA TELECOM</p>
+            <p class="tl-desc">Where the logic of machines met the discipline of engineering — a habit that now resurfaces in every analysis pipeline.</p>
+          </li>
+        </ul>
+
+        <div>
+          <h3 class="col-head">Awards &amp; funding</h3>
+          <!-- EDIT: awards, prizes and grants -->
+          <ul class="awards">
+            <li><span class="aw-year">2026–28</span><p><strong>IBRO Rising Star Award</strong> — PI</p></li>
+            <li><span class="aw-year">2023</span><p><strong>First place, ASBCB Omics Codeathon</strong> — gut pathogenic microbes &amp; Alzheimer’s phenotypes</p></li>
+            <li><span class="aw-year">2023</span><p><strong>First place, NIH ODSS Codeathon</strong> — bacterial diversity in the COVID-19 metagenome, AI-aided</p></li>
+            <li><span class="aw-year">2019</span><p><strong>Best Poster for Scientific Content</strong> — Countdown Consortium AGM</p></li>
+            <li><span class="aw-year">2019–20</span><p><strong>RSTMH Small Grant</strong> — PI</p></li>
+          </ul>
+
+          <div class="xp-gap" aria-hidden="true"></div>
+          <h3 class="col-head">Toolkit</h3>
+          <!-- EDIT: skills / techniques -->
+          <ul class="tags">
+            <li>R</li>
+            <li>Python</li>
+            <li>Bash</li>
+            <li>Julia</li>
+            <li>Git</li>
+            <li>Linux</li>
+            <li>Metagenomics</li>
+            <li>Machine learning</li>
+            <li>qPCR</li>
+            <li>Animal models</li>
+            <li>Molecular docking</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ 06 · CONTACT ══════════════ -->
+  <section class="sec" id="contact">
+    <div class="wrap">
+      <header class="sec-head">
+        <span class="sec-num" aria-hidden="true">06</span>
+        <h2 class="sec-title">Contact</h2>
+        <span class="sec-rule" aria-hidden="true"></span>
+      </header>
+
+      <div class="cta">
+        <p class="cta-kick">Open channels</p>
+        <h3 class="cta-title">Let’s work together.</h3>
+        <!-- EDIT: the invitation line -->
+        <p class="cta-line">Open to research collaborations, student supervision and conversations about neuro-infectious disease, NTDs and open, reproducible bioinformatics.</p>
+
+        <ul class="cta-links">
+          <li><a href="mailto:ejtettevi@gmail.com" data-print="ejtettevi@gmail.com">ejtettevi@gmail.com</a></li>
+          <li><a href="mailto:edward@csir.org.gh" data-print="edward@csir.org.gh">edward@csir.org.gh</a></li>
+          <li><a href="https://github.com/ejtettevi" target="_blank" rel="noopener" data-print="github.com/ejtettevi">GitHub — @ejtettevi</a></li>
+          <!-- EDIT: add your LinkedIn, ORCID and/or Google Scholar profiles here, e.g.
+               <li><a href="https://orcid.org/0000-0002-XXXX-XXXX" data-print="orcid.org/0000-0002-XXXX-XXXX">ORCID</a></li>
+               <li><a href="https://scholar.google.com/citations?user=XXXX" data-print="Google Scholar">Google Scholar</a></li>
+               <li><a href="https://www.linkedin.com/in/ejtettevi" data-print="linkedin.com/in/ejtettevi">LinkedIn</a></li>   -->
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ══════════════ FOOTER ══════════════ -->
+<footer class="site-foot">
+  <div class="wrap foot-row">
+    <p class="foot-strong">© 2026 Edward Jenner Tettevi · Accra, Ghana</p>
+    <p>ejtettevi.github.io · built with plain HTML &amp; CSS</p>
+  </div>
+</footer>
+</body>
+</html>
