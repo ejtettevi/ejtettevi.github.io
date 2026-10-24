@@ -401,8 +401,10 @@ img.portrait{ display:block; width:100%; object-fit:cover }
 .foot-row .foot-strong{ color:var(--ink) }
 
 /* ── Staggered hero fade-up (CSS-only; no scripts) ────────────── */
-@keyframes rise{ from{ opacity:0; transform:translateY(16px) } to{ opacity:1; transform:none } }
-.fade-up{ animation:rise .75s cubic-bezier(.16,.7,.2,1) both; animation-delay:var(--d,0s) }
+@keyframes rise{ from{ opacity:0; transform:translateY(12px) } to{ opacity:1; transform:none } }
+/* Staggered entrance. calc() halves every inline --d so the whole hero is fully
+   visible in well under a second — no element lingers hidden on a fast load. */
+.fade-up{ animation:rise .55s cubic-bezier(.16,.7,.2,1) both; animation-delay:calc(var(--d,0s) * .5) }
 
 /* ── Responsive ───────────────────────────────────────────────── */
 @media (max-width:920px){
