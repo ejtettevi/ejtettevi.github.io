@@ -538,14 +538,17 @@ img.portrait{ display:block; width:100%; height:100%; object-fit:cover }
       </div>
 
       <figure class="hero-portrait fade-up" style="--d:.32s">
-        <div class="stamp" aria-hidden="true">CSIR–WRI · ACCRA</div>
         <!-- EDIT: PORTRAIT — currently uses your real photo, "profile.jpg" (in this folder).
              To update it, just overwrite profile.jpg with a new image of the same name.
              To go back to the "ejt" initials block instead of a photo, use:
-             <div class="portrait"><span>ejt</span></div>                                        -->
+             <div class="portrait"><span>ejt</span></div>
+             Note: the "CSIR–WRI · ACCRA" badge (.stamp) and the "Fig. 1 —" caption
+             (figcaption) that used to sit here were removed on request. To restore
+             either later, add back just above / just below the <img>:
+             <div class="stamp" aria-hidden="true">CSIR–WRI · ACCRA</div>
+             <figcaption>Fig. 1 — Molecular cell biologist, at the bench and in code.</figcaption> -->
         <img class="portrait" src="profile.jpg" alt="Portrait of Dr. Edward Jenner Tettevi"
              width="420" height="472" loading="eager">
-        <figcaption>Fig. 1 — Molecular cell biologist, at the bench and in code.</figcaption>
       </figure>
     </div>
 
