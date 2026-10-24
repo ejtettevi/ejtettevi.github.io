@@ -2,15 +2,16 @@
 
 Personal academic homepage — live at **https://ejtettevi.github.io**
 
-> I study how microbes, parasites and molecules shape disease, from the gut–brain axis in Alzheimer's to river blindness in rural Ghana, at the bench and in code.
+> I study how microbes, parasites and molecules shape disease — from the gut–brain axis in Alzheimer's to river blindness and drug-resistant infections across Ghana — at the bench, in the field and in code.
 
 ## About
 
-**Dr. Edward Jenner Tettevi, PhD** — Research Scientist, Molecular Cell Biologist, based in Accra, Ghana.
+**Dr. Edward Jenner Tettevi, PhD** — Research Scientist & unit head, molecular cell biologist, bioinformatician; based in Accra, Ghana.
 
-- 🧪 **Research Scientist**, CSIR – Water Research Institute; **Acting Head**, Biomedical & Public Health Research Unit; lead of the onchocerciasis and lymphatic filariasis research team
+- 🧪 **Research Scientist & Head** of the Biomedical & Public Health Research Unit, CSIR – Water Research Institute; leads the institute's onchocerciasis and lymphatic filariasis team and its AMR-in-ageing-populations programme
 - 🎓 **PhD** Molecular Cell Biology of Infectious Pathogens (WACCBIP, University of Ghana) · **MPhil** Parasitology (KNUST) · **BSc** Molecular Biology & Biotechnology (UCC)
-- 🔬 Research spans three connected threads: **Alzheimer's & the gut–brain axis**, **neglected tropical disease elimination** (onchocerciasis, lymphatic filariasis, schistosomiasis, soil-transmitted helminths), and **bioinformatics & drug discovery** (metagenomics, GWAS, comparative genomics, in-silico drug repurposing)
+- 🔬 Research spans four connected threads: **Alzheimer's & the gut–brain axis**, **neglected tropical disease elimination** (onchocerciasis, lymphatic filariasis, schistosomiasis, soil-transmitted helminths), **antimicrobial resistance in ageing populations**, and **bioinformatics & drug discovery** (metagenomics, GWAS, comparative genomics, in-silico drug repurposing)
+- 📊 349+ citations, h-index 10 (Google Scholar)
 
 ## Code
 
@@ -29,6 +30,7 @@ Analytical pipelines and re-analyses live in my other repositories — [browse t
 - Built as a **single `index.html`** — semantic HTML with all CSS inlined, no frameworks, no external fonts or scripts
 - Warm editorial design (cream paper, forest green, ochre), system fonts only, respects `prefers-reduced-motion`, and includes a print stylesheet
 - Portrait lives at `profile.jpg`; the "ejt" fallback block and all text edits are marked with `EDIT:` comments inside the file
+- SEO: canonical URL, Open Graph/Twitter card tags, and JSON-LD `Person` schema (Google Scholar + GitHub `sameAs`) — update the Scholar user id in three places if it changes: the JSON-LD block, the Contact section, and the Full-record publications link
 
 ## Updating and redeploying
 
